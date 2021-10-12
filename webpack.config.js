@@ -8,8 +8,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  // mode: 'production',
+  mode: 'production',
   // watch: true,
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    open: true,
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'My App',
