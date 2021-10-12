@@ -6,5 +6,6 @@ module.exports = {
     filename: 'demo.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  // mode: 'production'
+  // mode: 'production',
+  // watch: true,
 }

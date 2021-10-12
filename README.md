@@ -16,3 +16,9 @@ npx webpack --config webpack.config.js
 npx webpack --mode=development
 npx webpack --mode=production
 ```
+
+# 4. Watch
+
+```
+npx webpack --watch
+```
