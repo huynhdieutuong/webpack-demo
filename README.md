@@ -9,3 +9,10 @@ npx webpack
 ```
 npx webpack --config webpack.config.js
 ```
+
+# 3. Mode
+
+```
+npx webpack --mode=development
+npx webpack --mode=production
+```
