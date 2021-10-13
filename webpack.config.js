@@ -2,9 +2,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: ['./src/index.js', './src/test.js'],
+  entry: {
+    main: './src/index.js',
+    test: './src/test.js',
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -22,4 +25,9 @@ module.exports = {
       filename: 'index.html',
     }),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 }
